@@ -9,3 +9,9 @@ console.log(null<0)
 //thease two value only return true and rest of other return false
 console.log(null>=0)
 console.log(null<=0)
+
+//but if we try 'undefined' with anything anyhow it will give you false only
+
+//"=== - strict check " it will check the datatype as well
+console.log("2"==2) // it will give true
+console.log("2"===2) // it will give false because it will check the datatype as well
