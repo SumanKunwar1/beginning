@@ -7,3 +7,4 @@ const course={
 }
 const {Teacher:Instructor}=course
 console.log(Instructor);//this is destructuring
+
