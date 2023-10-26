@@ -19,3 +19,22 @@ function printme(item){
 Programming.forEach((item,index,arr) =>{
    // console.log(item,index,arr);
 })
+
+//when we have object inside array or likewise
+//its little complicated thing so be read it carefully-very imp for database
+const myCoding=[
+    {name:"java",
+    prefix:"j"},
+
+    {name:"javascrit",
+    prefix:"js"},
+
+    {name:"Python",
+    prefix:"Py"},
+
+    {name:"Ruby",
+    prefix:"rb"},
+]
+myCoding.forEach((item) =>{
+    console.log(item.name);
+})
