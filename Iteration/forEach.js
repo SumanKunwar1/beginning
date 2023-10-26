@@ -38,3 +38,5 @@ const myCoding=[
 myCoding.forEach((item) =>{
     console.log(item.name);
 })
+
+//for each doesnot return any value it just print only
