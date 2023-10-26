@@ -49,6 +49,24 @@ if(isUserLogedIn && validDebitcard && 2==3){
 if(logedInfromGoogle || loggedInfromEmail){
     console.log("You are eligible to enter");
 }
+//nullish coalescing operator(??):null, undefined
+
+let val1;
+//val1=5 ?? 10
+//some time while working on database we didn't get the value directly we get two value most of time
+//we use first one but if the fist value is null or undefined then using next one for fault tolerance
+// val1=null ?? 10
+val1=undefined ?? 15
+const val2 = null ?? 20 ?? 30 // first value will print 
+
+console.log(val1);
+console.log(val2);
+
+//ternery operator ?
+const iceTeaPrice=100
+iceTeaPrice <=80 ? console.log("less than 80") :console.log("Greater than 80"); 
+//to execute statement in the same line without using if else we use this'?' ternery operator
+
 
 
 
