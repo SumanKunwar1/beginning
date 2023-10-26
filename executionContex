@@ -1,0 +1,20 @@
+javascript is single thread language 
+Types of EC
+1. global execution context
+2. functional execution context
+3. eval -it also a porperty of global ec -optional 
+
+there are two phases in execution of memory 
+1.memory creation phases
+2. execution phase
+
+i. while running a code first of code run through global execution or enviroment and its allocated inside 
+-'this'
+ii. memory creation phase :here all varible name store and put there value undefined
+name ->undefined 
+incase of function -> it store function defination ----this is first cycle next we have
+
+iii. execution phase: give the value to the keys 
+like name->"suman", age->18 in this way
+
+for more watch video at 5:57:00
