@@ -15,6 +15,6 @@ result as well as it eveytime while you are printing userTwo value will override
 so which is very bad while multiple developer woking on same project so use 'new' keyword 
 which will creat new instance for particular varibale which is unchange */
 console.log(userOne);
-console.log(userTwo);
+console.log(userTwo.constructor);
 
 
