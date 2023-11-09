@@ -11,3 +11,5 @@ function createUser(username,score, isLogedIn){
 
 const user=new createUser("suman",99,true)
 console.log(user);
+
+//but this is also old version -now you have the modern one we study on inheritance.js
