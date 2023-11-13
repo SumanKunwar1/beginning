@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="aqua">Aqua</aqua>
+</body>
+<script>
+    //for exaple we wanted to change background color of our window while pressing button
+
+    /* document.getElementById("orange").onclick= function(){
+        document.body.style.backgroundColor="orange";
+    }
+    document.getElementById("blue").onclick= function(){
+        document.body.style.backgroundColor="blue";
+    }
+    this type of work is little more tedius because we have write new compeletely from scratch everytime
+    so we need to use the laxical scope and closure */
+
+    function clickHandler(color){
+
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }// here in this next function we don't have any local color variable but still it cal access it 
+        // due to of laxical scope and return a while return this function it also return its laxical scope 
+        // as well
+    
+    }
+    document.getElementById("orange").onclick = clickHandler("orange")
+    document.getElementById("aqua").onclick = clickHandler("aqua")
+
+</script>
+</html>
